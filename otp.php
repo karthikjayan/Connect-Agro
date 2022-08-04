@@ -25,14 +25,14 @@ if(!empty($_POST["submit_email"])) {
 		$mail->isSMTP();                                      // Set mailer to use SMTP
 		$mail->Host = 'smtp.gmail.com;';  										// Specify main and backup SMTP servers
 		$mail->SMTPAuth = true;                               // Enable SMTP authentication
-		$mail->Username = 'nkarthikj.y2k@gmail.com';                 // SMTP username
-		$mail->Password = 'glory27082000';                           // SMTP password
+		$mail->Username = 'your_email@gmail.com';                 // SMTP username
+		$mail->Password = 'pass@123';                           // SMTP password
 		$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
 		$mail->Port = 587;                                    // TCP port to connect to
 
-		$mail->setFrom('nkarthikj.y2k@gmail.com', 'CONNECT AGRO');
+		$mail->setFrom('your_email@gmail.com', 'CONNECT AGRO');
 		$mail->addAddress($_POST['email']);     // Add a recipient
-		$mail->addReplyTo('nkarthikj.y2k@gmail.com');
+		$mail->addReplyTo('your_email@gmail.com');
 		$mail->isHTML(true);                                  // Set email format to HTML
 
 		$mail->MsgHTML($message_body);
@@ -58,14 +58,14 @@ if(!empty($_POST["submit_email"])) {
 			 $mail->isSMTP();                                      // Set mailer to use SMTP
 			 $mail->Host = 'smtp.gmail.com;';  										// Specify main and backup SMTP servers
 			 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-			 $mail->Username = 'nkarthikj.y2k@gmail.com';                 // SMTP username
-			 $mail->Password = 'glory27082000';                           // SMTP password
+			 $mail->Username = 'your_email@gmail.com';                 // SMTP username
+			 $mail->Password = 'pass@123';                           // SMTP password
 			 $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
 			 $mail->Port = 587;                                    // TCP port to connect to
 
-			 $mail->setFrom('nkarthikj.y2k@gmail.com', 'CONNECT AGRO');
+			 $mail->setFrom('your_email@gmail.com', 'CONNECT AGRO');
 			 $mail->addAddress($_POST['email']);     // Add a recipient
-			 $mail->addReplyTo('nkarthikj.y2k@gmail.com');
+			 $mail->addReplyTo('your_email@gmail.com');
 			 $mail->isHTML(true);                                  // Set email format to HTML
 
 			 $mail->MsgHTML($message_body);
